@@ -1,0 +1,5 @@
+How to install java8 on mac using brew?
+
+install homebrew -> /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+install java8 using homebrew -> brew install --cask homebrew/cask-versions/adoptopenjdk8
+add JAVA_HOME in zshrc file -> export JAVA_HOME=$(/usr/libexec/java_home)

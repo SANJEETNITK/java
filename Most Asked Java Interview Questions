@@ -1,0 +1,348 @@
+important links
+  https://www.interviewbit.com/java-interview-questions/
+  https://www.janbasktraining.com/blog/core-java-interview-questions-answers/
+
+
+1. Explain the difference between JDK, JRE and JVM.
+
+JVM (Java Virtual Machine) -> JVM is an abstract machine. It is called a virtual machine because it doesn't physically exist. It is a specification that provides a runtime environment in which Java bytecode can be executed. It can also run those programs which are written in other languages and compiled to Java bytecode.
+
+JVMs are available for many hardware and software platforms. JVM, JRE, and JDK are platform dependent because the configuration of each OS is different from each other. However, Java is platform independent. There are three notions of the JVM: specification, implementation, and instance.
+
+The JVM performs the following main tasks:
+  Loads code
+  Verifies code
+  Executes code
+  Provides runtime environment
+
+JRE(Java Runtime Environment) -> JRE is a set of software tools which are used for developing Java applications. It is used to provide the runtime environment. It is the implementation of JVM. It physically exists. It contains a set of libraries + other files that JVM uses at runtime.
+
+The implementation of JVM is also actively released by other companies besides Sun Micro Systems.
+
+JDK(Java Development Kit) -> JDK is a software development environment which is used to develop Java applications and applets. It physically exists. It contains JRE + development tools.
+
+JDK is an implementation of any one of the below given Java Platforms released by Oracle Corporation:
+
+  Standard Edition Java Platform
+  Enterprise Edition Java Platform
+  Micro Edition Java Platform
+
+The JDK contains a private Java Virtual Machine (JVM) and a few other resources such as an interpreter/loader (java), a compiler (javac), an archiver (jar), a documentation generator (Javadoc), etc. to complete the development of a Java Application.
+
+
+2. What makes Java a platform-independent programming language?
+
+Java is platform-independent because it provides the feasibility to run and compile the program in one platform and execute the program on any other platform of your choice.
+
+3. What is a constructor in Java?
+
+A constructor is a block of code that is used in a Java environment to initialize an object. It carries the same name that you had given to the class. A Java constructor is automatically called when an object is created.
+
+4. Differentiate between a constructor and a method?
+
+A constructor constructs the value, by providing data for the object. It is a special type of method that is used to initialize the object. The constructor has the same name as the class itself, has no return type, and is invoked using the new operator. A method is an ordinary member function of a class. A method can be invoked using the dot operator and has its own name, and a return type.
+
+5. Can we mark constructors final?
+
+No, declaring the constructor as final is not possible.
+
+6. What is a class in Java?
+
+Ans:- A class, in the environment of Java, are some templates that are used for object creation, and to define certain object data types and their methods.
+
+7. State the significance of public, private, protected class.
+
+Public: When a class is public, the public class is visible in other packages, the field is visible everywhere.
+Private: Private variables or methods can be used by an instance of the same class only which declares the variable or method. A private feature can be accessed by the class that owns the feature.
+Protected: Protected variable is available to all classes in the same package. It is also available to all subclasses of the class that owns the protected feature. Subclasses that reside in a different package also are provided with access from the class that owns the protected feature.
+
+8. What is the final class?
+
+A final class is a constant value of a final variable. Extending A final class is not possible ie., final class may not be subclassed. A final method cannot be overridden when its class is inherited.
+
+9. What is a wrapper class?
+
+Ans:- The classes that “wrap” the primitive data type into an object of that class are called Java wrapper classes.
+
+10. What is an abstract class?
+
+Ans:- Abstract serves as a template. In order to use an abstract class, it must be extended or subclassed. An abstract class may not be instantiated. Any class with an abstract method is abstract itself, hence is declared as such.
+
+11. Describe synchronization with respect to multithreading.
+
+Ans:- Synchronization is the method to control the access of multiple threads to shared resources, with respect to multithreading. One thread can modify a shared variable when not in synchronization even when another thread is in the process of using or updating the same shared variable. This can lead to significant errors.
+
+12. What is the purpose of garbage collection in Java, and when is it used?
+
+Ans:- The main purpose of garbage collection is to analyze a program, identify and discard the objects that are no longer needed. It is helpful as the resources can be reclaimed and reused. A Java object is subjected to garbage collection when the object is not reachable to the program in which it is used.
+
+13. What are the different ways of implementing thread? Which one is more advantageous?
+
+Ans:- The thread can be implemented by using runnable interface Inheriting from the Thread class. The use of the Runnable interface is more advantageous because when going for multiple inheritances, the only interface can help.
+
+14. What if the main() method is declared as private? What happens when the static modifier is removed from the signature of the main() method?
+
+Ans:- When the main() method is declared as private, the program compiles but during runtime it shows “main() method not public.” Message. When the static modifier is removed from the signature of the main() method, the Program compiles but at runtime throws an error “NoSuchMethodError”.
+
+15. Java Interview Questions -Differentiate between StringBuffer and StringBuilder in Java?
+
+Ans:- The only difference between StringBuffer and StringBuilder is that StringBuffer methods are synchronized while StringBuilder is not synchronized.
+
+16. What is a JIT compiler?
+
+Ans:- Just-In-Time(JIT) compiler is used to improve the performance. JIT compiles parts of the bytecode that has similar functionality which in turn reduces the amount of time needed for compilation. The term “compiler” here refers to a translator from the instruction set of a Java virtual machine (JVM) to the instruction set of a specific CPU.
+
+17. What is a package in Java?
+
+Ans:- The collection of related classes and interfaces grouped together is Package in Java. It enables developers to easily modularize codes. Packages help in providing easier access control on the code.
+
+18. What is the final keyword in Java?
+
+Ans:- Final is a special keyword in Java being used as a non-access modifier. It is used in various contexts like Final variables, Final Methods, and Final Class. Final class refers to a class being declared as final in Java.
+
+19. What are the various types of inheritance in Java?
+
+Ans:- Java has four types of inheritance namely:
+
+Single inheritance - Herein one class inherits the properties of another class.
+Multilevel inheritance - A class having more than one parent class but at different levels is termed as Multilevel inheritance.
+Hierarchical inheritance - When a class has more than one child class it is termed as hierarchical inheritance.
+Hybrid inheritance - It’s a combination of two or more types of inheritance.
+
+20. What is the most important feature of Java8?
+
+Ans:- The most important feature of Java 8 is its functional interface and static methods. When adding a functional interface to the object-oriented interface, programming becomes less complicated and more efficient.
+
+21. What is the difference between path and classpath variables?
+
+Ans:- Classpath is related to Java executables, used to locate class files. Path, on the other hand, exists in an operating system used to locate executables.
+
+22. explain serialization and deserialization?
+
+Ans:- Both serialization and deserialization are crucial to stream handling in Java. Through serialization, you convert an object into a byte stream, and through deserialization, you simply undo the process.
+
+23. What is platform independence?
+
+Ans:- Platform independence is when you design a program that runs on any operating system making things more accessible. This is the reason why Java is ahead of other programming languages.
+
+24. What is a package in Java? List down its major advantages.
+
+Ans:- It is a collection of related classes and interfaces which are bundled together. It allows developers to easily modularize the code and optimize its reuse. Also, the code within the packages can be imported by other classes and reused.
+
+Packages are helpful in avoiding name clashes
+They provide easier access control on the code
+They can also carry hidden classes that are not visible to the outer classes
+
+25. What is the importance of reflection in Java?
+
+Ans:- It is a runtime API used to inspect and change the behavior of methods, classes, and interfaces. Java Reflection is a powerful tool that allows you to analyze classes, interfaces, fields, and methods during runtime without knowing what they are called at compile time. It also helps in creating new objects, call methods, and getting/set field values.
+
+26. What is Java String Pool?
+
+Ans:- A collection of Strings stored in heap memory is called Java String Pool. Whenever a new object is formed, first of all, the String pool identifies whether the object is already present in the pool or not. If it is present, then the same reference is returned to the variable; otherwise, a new object is created.
+
+27. Why is Java not a pure object oriented language?
+
+Java supports primitive data types - byte, boolean, char, short, int, float, long, and double and hence it is not a pure object oriented language.
+
+28.  Difference between Heap and Stack Memory in java. And how java utilizes this.
+
+Stack memory is the portion of memory that was assigned to every individual program. And it was fixed. On the other hand, Heap memory is the portion that was not allocated to the java program but it will be available for use by the java program when it is required, mostly during the runtime of the program.
+
+Java Utilizes this memory as -
+
+When we write a java program then all the variables, methods, etc are stored in the stack memory.
+And when we create any object in the java program then that object was created in the heap memory. And it was referenced from the stack memory.
+
+29. How would you differentiate between a String, StringBuffer, and a StringBuilder?
+
+Storage area: In string, the String pool serves as the storage area. For StringBuilder and StringBuffer, heap memory is the storage area.
+Mutability: A String is immutable, whereas both the StringBuilder and StringBuffer are mutable.
+Efficiency: It is quite slow to work with a String. However, StringBuilder is the fastest in performing operations. The speed of a StringBuffer is more than a String and less than a StringBuilder. (For example appending a character is fastest in StringBuilder and very slow in String because a new memory is required for the new String with appended character.)
+Thread-safe: In the case of a threaded environment, StringBuilder and StringBuffer are used whereas a String is not used. However, StringBuilder is suitable for an environment with a single thread, and a StringBuffer is suitable for multiple threads.
+
+
+30. Using relevant properties highlight the differences between interfaces and abstract classes.
+
+Availability of methods: Only abstract methods are available in interfaces, whereas non-abstract methods can be present along with abstract methods in abstract classes.
+Variable types: Static and final variables can only be declared in the case of interfaces, whereas abstract classes can also have non-static and non-final variables.
+Inheritance: Multiple inheritances are facilitated by interfaces, whereas abstract classes do not promote multiple inheritances.
+Data member accessibility: By default, the class data members of interfaces are of the public- type. Conversely, the class members for an abstract class can be protected or private also.
+Implementation: With the help of an abstract class, the implementation of an interface is easily possible. However, the converse is not true;
+
+31. What is a Comparator in java?
+
+Consider the example where we have an ArrayList of employees like( EId, Ename, Salary), etc. Now if we want to sort this list of employees based on the names of employees. Then that is not possible to sort using the Collections.sort() method. We need to provide something to the sort() function depending on what values we have to perform sorting. Then in that case a comparator is used.
+
+Comparator is the interface in java that contains the compare method. And by overloading the compare method, we can define that on what basis we need to compare the values.
+
+32. What makes a HashSet different from a TreeSet?
+
+Although both HashSet and TreeSet are not synchronized and ensure that duplicates are not present, there are certain properties that distinguish a HashSet from a TreeSet.
+
+Implementation: For a HashSet, the hash table is utilized for storing the elements in an unordered manner. However, TreeSet makes use of the red-black tree to store the elements in a sorted manner.
+Complexity/ Performance: For adding, retrieving, and deleting elements, the time amortized complexity is O(1) for a HashSet. The time complexity for performing the same operations is a bit higher for TreeSet and is equal to O(log n). Overall, the performance of HashSet is faster in comparison to TreeSet.
+Methods: hashCode() and equals() are the methods utilized by HashSet for making comparisons between the objects. Conversely, compareTo() and compare() methods are utilized by TreeSet to facilitate object comparisons.
+Objects type: Heterogeneous and null objects can be stored with the help of HashSet. In the case of a TreeSet, runtime exception occurs while inserting heterogeneous objects or null objects.
+
+33. Why is the character array preferred over string for storing confidential information?
+
+In Java, a string is basically immutable i.e. it cannot be modified. After its declaration, it continues to stay in the string pool as long as it is not removed in the form of garbage. In other words, a string resides in the heap section of the memory for an unregulated and unspecified time interval after string value processing is executed.
+
+As a result, vital information can be stolen for pursuing harmful activities by hackers if a memory dump is illegally accessed by them. Such risks can be eliminated by using mutable objects or structures like character arrays for storing any variable. After the work of the character array variable is done, the variable can be configured to blank at the same instant. Consequently, it helps in saving heap memory and also gives no chance to the hackers to extract vital data.
+
+34.  What do we get in the JDK file?
+
+JDK- For making java programs, we need some tools that are provided by JDK (Java Development Kit). JDK is the package that contains various tools, Compiler, Java Runtime Environment, etc.
+JRE -  To execute the java program we need an environment. (Java Runtime Environment) JRE contains a library of Java classes +  JVM. What are JAVA Classes?  It contains some predefined methods that help Java programs to use that feature, build and execute. For example - there is a system class in java that contains the print-stream method, and with the help of this, we can print something on the console.
+JVM - (Java Virtual Machine) JVM  is a part of JRE that executes the Java program at the end.  Actually, it is part of JRE, but it is software that converts bytecode into machine-executable code to execute on hardware.
+
+35. What are the different types of Thread Priorities in Java? And what is the default priority of a thread assigned by JVM?
+
+There are a total of 3 different types of priority available in Java.
+
+MIN_PRIORITY: It has an integer value assigned with 1.
+MAX_PRIORITY: It has an integer value assigned with 10.
+NORM_PRIORITY: It has an integer value assigned with 5.
+
+36. What is the importance of reflection in Java?
+
+The term reflection is used for describing the inspection capability of a code on other code either of itself or of its system and modify it during runtime.
+Consider an example where we have an object of unknown type and we have a method ‘fooBar()’ which we need to call on the object. The static typing system of Java doesn't allow this method invocation unless the type of the object is known beforehand. This can be achieved using reflection which allows the code to scan the object and identify if it has any method called “fooBar()” and only then call the method if needed.
+Method methodOfFoo = fooObject.getClass().getMethod("fooBar", null);
+methodOfFoo.invoke(fooObject, null);
+Using reflection has its own cons:
+Speed — Method invocations due to reflection are about three times slower than the direct method calls.
+Type safety — When a method is invoked via its reference wrongly using reflection, invocation fails at runtime as it is not detected at compile/load time.
+Traceability — Whenever a reflective method fails, it is very difficult to find the root cause of this failure due to a huge stack trace. One has to deep dive into the invoke() and proxy() method logs to identify the root cause.
+Hence, it is advisable to follow solutions that don't involve reflection and use this method as a last resort.
+
+
+37. What is the difference between the ‘throw’ and ‘throws’ keyword in java?
+
+The ‘throw’ keyword is used to manually throw the exception to the calling method.
+And the ‘throws’ keyword is used in the function definition to inform the calling method that this method throws the exception. So if you are calling, then you have to handle the exception.
+
+38. What is the difference between the program and the process?
+
+A program can be defined as a line of code written in order to accomplish a particular task. Whereas the process can be defined as the programs which are under execution.
+A program doesn't execute directly by the CPU. First, the resources are allocated to the program and when it is ready for execution then it is a process.
+
+
+39. What happens if there are multiple main methods inside one class in Java?
+
+The program can't compile as the compiler says that the method has been already defined inside the class.
+
+40. What do you understand by Object Cloning and how do you achieve it in Java?
+
+It is the process of creating an exact copy of any object. In order to support this, a java class has to implement the Cloneable interface of java.lang package and override the clone() method provided by the Object class the syntax of which is:
+protected Object clone() throws CloneNotSupportedException{
+ return (Object)super.clone();
+}
+In case the Cloneable interface is not implemented and just the method is overridden, it results in CloneNotSupportedException in Java.
+
+
+41. Is it mandatory for a catch block to be followed after a try block?
+
+No, it is not necessary for a catch block to be present after a try block. - A try block should be followed either by a catch block or by a finally block. If the exceptions likelihood is more, then they should be declared using the throws clause of the method.
+
+
+42. Will the finally block get executed when the return statement is written at the end of try block and catch block as shown below?
+
+public int someMethod(int i){
+   try{
+       //some statement
+       return 1;
+   }catch(Exception e){
+       //some statement
+       return 999;
+   }finally{
+       //finally block statements
+   }
+}
+finally block will be executed irrespective of the exception or not. The only case where finally block is not executed is when it encounters ‘System.exit()’ method anywhere in try/catch block.
+
+43. What do you understand about ClassLoader in Java?
+
+ClassLoader is an integral element of the JRE (Java Runtime Environment). The function of the ClassLoader is to dynamically load Java classes directly to the JVM (Java Virtual Machine) during program execution, without notifying the Java run time system. The file to be executed is first loaded by ClassLoaders. Bootstrap, Extension, and Application are the ClassLoaders in Java. This is an advanced Java interview question and answering it can establish your expertise.
+
+
+Garbage Collector
+
+44. What is Garbage Collection and What are its Advantages?
+Garbage collection in java is an automatic process of looking ant heap memory, identifying whic objects are in use and which are not, and deleting the unused objects.
+An in use object, or a referenced object, means that some part of your program still maintains a pointer to that object.
+An unused object, or unreferenced object, is no longer referenced by any part of yourprogram. So the memory used by an unreferenced objec can be reclaimed
+Main Advantage of automatic garbage collection in java is that it removes the burden of manual memory allocation/deallocation from  us so that we can focus on problem solving.
+
+45. Where are objects created in memory ? On stack or Heap.
+Whenever an object is created, it’s always stored in the Heap space and stack memory contains the reference to it. Stack memory only contains local primitive variables and reference variables to objects in heap space.
+
+46. Who manages Garbage Collector.
+The JVM controls the Garbage Collector.
+It’s the one decides when to run the Garbage Collector.
+JVM runs the Garbage Collector when it realizes that the memory is running low.
+One can request the Garbage Collection to happen from within the java program but there is no guarantee that this request will be taken care of by JVM.
+
+47. How can the Garbage Collection be request ?
+There are two ways in which we can request the JVM to execute the Garbage Collection:
+Call the System class System.gc() method which will request the JVM perform GC.
+The methods to perform the garbage collections are present in the Runtime class provided by java. The Runtime class is a Singleton for each java main program. The method getRuntime() returns a singleton instance of the Runtime class. The method gc() can be invoked using this instances of Runtime to request the garbage collection.
+
+
+
+48. When does an object become eligible for garbage collection?
+An object becomes eligible for Garbage Collection when no live thread can access it.
+Objects not in use (or unreferenced objects) are those objects which are not needed by java program, no part of java program in pointing to that object.
+So, these unused objects can be cleaned in GC (garbage collection) process and memory used by an unreferenced object can be reclaimed.
+
+49. What are the different ways to make an object eligible for GC when it is no longer needed?
+Set all available object references to null.
+Make the reference variable to refer to another object.
+Creating Islands of Isolation.
+
+50. What is the purpose of overriding finalize() method?
+Finalize method in Java also called finalizer is a method defined in java.lang.Object
+Its called by Garbage collector just before collecting any object which is eligible for GC.
+Thus Finalize() method provides last chance to object to do cleanup and free any remaining resource.
+
+51. How many times does the garbage collector calls the finalize() method for an object?
+Only once.
+
+52. What is responsibility of Garbage Collector?
+Garbage collector frees the memory occupied by the unreachable objects during the java program by deleting these unreachable objects.
+It ensures that the available memory will be used eddiciently, but does not guarantee that there will be sufficient memiry for the program to run. (When not it gives out ofmemory exception).
+
+53. Is Garbage collector a foreground or background thread?
+Garbage Collector is a background / daemon thread.
+
+54. What is Daemon Thread?
+A Daemon thread runs behind the application.
+It is started by JVM.
+The thread stops when all nom-daemon / foreground threads stop.
+
+55. How Garbage Collection works
+GC works in 2 steps:
+Marking: unreferenced objects in heap are identified and marked as ready for garbage collection.
+Deletion (Normal deletion) / Deletion + Compaction: In this step objects marked previously is deleted.
+Memory is compacted after GC deletes the object so that remaining objects are in contiguous blocks at the start of heap memory.
+This compaction makes it easier to allocate memory sequentially after a chunk of allocated memory area for new objects in heap.
+
+56. Can you name commonly used oracle’s JVM & which GC strategy is used by it?
+“HotSpot” is the most commonly used JVM by oracle.
+All HotSpot’s GC implements generational GC strategy ie. It categorizes the objects by ages.
+
+57. Why Most GC uses Generational GC Strategy ?
+Reason for most GC using Generational GC Strategy is that most of the objects are short lived and hence die shortly just after memory allocation. This is called “DIE YOUNG” or Infant Mortality (infant refers to object here) strategy.
+
+58. Explain Generational GC Strategy and Hotspot Heap Structure used by these GC?
+Heap area is divided into 3 sections i.e.
+Young generation
+Tenured
+Permanent generation
+
+59. Explain GC process
+GC process can be divided into following steps:
+New object allocation
+When Eden space fills up Minor GC is triggered.
+In minor GC unreferenced objects are deleted from eden space and Referenced objects are moved to first survivor space.
